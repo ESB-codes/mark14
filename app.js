@@ -26,12 +26,12 @@ function random(){
 function calculate(cost, quantity, final){
     if (cost>final){
         let loss=(cost-final)*quantity;
-        let lossPercent= (loss/cost*100);
+        let lossPercent= (cost-final)/cost*100;
         showOutput(`The loss is ${loss} and the loss percentage is ${lossPercent.toFixed(2)}%`)
     }
      else if(final>cost){
         let profit=(final-cost)*quantity;
-        let profitPercent= (profit/cost*100);
+        let profitPercent= (final-cost)/cost*100;
          showOutput(`Yay! You had a profit of ${profit}, profit percentage being ${profitPercent.toFixed(2)}`)
         
     }
