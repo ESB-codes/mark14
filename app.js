@@ -10,12 +10,12 @@ function random(){
     let final= Number(finalEl.value);
 
     if (cost<0 || quantity<0 || final<0){
-        alert("only positive numbers allowed")
+        showOutput(`please enter positive values`)
         return;
     }
 
     if (cost==0 || quantity==0 || final==0 ){
-        alert("please provide all values");
+        showOutput(`please enter values for all fields`)
         return;
 
     }
